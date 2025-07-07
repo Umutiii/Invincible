@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invincible - Kahraman Hakkında</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f3f3f3;
+            color: #222;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        img {
+            width: 300px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Form stili */
+        .form-section {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .form-section h2 {
+            text-align: center;
+            color: #003366;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Invincible</h1>
+        <h2>Mark Grayson</h2>
+        <h3>Yeni Nesil Süper Kahraman</h3>
+    </header>
+
+    <section>
+        <img src="/img/mark.jpg" alt="Invincible Karakter Görseli">
+
+        <p>
+            <strong>Invincible</strong>, gerçek adıyla <strong>Mark Grayson</strong>, Robert Kirkman tarafından yaratılan aynı adlı çizgi roman serisinin baş kahramanıdır. 
+            Babası Omni-Man gibi bir süper kahraman olmayı hayal eden Mark, lise çağlarında süper güçlerini keşfetmeye başlar.
+        </p>
+
+        <h3>Süper Güçleri</h3>
+        <ul>
+            <li>Uçma</li>
+            <li>Üstün kuvvet ve dayanıklılık</li>
+            <li>Süper hız</li>
+            <li>Hızlı iyileşme</li>
+        </ul>
+
+        <h3>Düşmanları</h3>
+        <ul>
+            <li>Omni-Man (babasına karşı savaşmıştır)</li>
+            <li>Battle Beast</li>
+            <li>The Mauler Twins</li>
+            <li>Conquest</li>
+        </ul>
+
+        <h3>Ekip Arkadaşları</h3>
+        <ul>
+            <li>Atom Eve</li>
+            <li>Rex Splode</li>
+            <li>Robot</li>
+            <li>Dupli-Kate</li>
+        </ul>
+
+        <p>
+            Daha fazlası için resmi <a href="https://tr.wikipedia.org/wiki/Invincible_(dizi)" target="_blank">Wikipedia sayfasını</a> ziyaret edebilirsiniz.
+        </p>
+    </section>
+
+    <section class="form-section">
+        <h2>Kahraman Ekibine Katıl!</h2>
+
+        <form action="#" method="post">
+            <label for="fullname">İsim ve Soyisim</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Adınızı ve soyadınızı girin" required>
+
+            <label for="heroName">Süper Kahraman Adı</label>
+            <input type="text" id="heroName" name="heroName" placeholder="Örn: GölgePanter" required>
+
+            <label for="power">En Sevdiğiniz Süper Güç</label>
+            <input type="text" id="power" name="power" placeholder="Örn: Görünmezlik, Zihin Okuma" required>
+
+            <label for="message">Başvuru Mesajı</label>
+            <textarea id="message" name="message" rows="5" placeholder="Neden ekibe katılmak istiyorsunuz?" required></textarea>
+
+            <button type="submit">Başvuruyu Gönder</button>
+        </form>
+    </section>
+</body>
+</html>
